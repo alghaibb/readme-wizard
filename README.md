@@ -162,7 +162,7 @@ Feel free to contribute additional tests to improve the project's test coverage 
 
 ## Screenshot | Video demonstration
 ![Screenshot GIF of README Wizard in action](https://media.giphy.com/media/8N2w9zbsVkzel8d5lu/giphy.gif)<br>
-[Video demonstration of README Wizard](https://streamable.com/m9t1p2)<br><br>
+[Video demonstration of README Wizard](https://vimeo.com/876988086?share=copy#t=0)<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#table-of-contents">Back to Top</a>
   
 ## Contact
