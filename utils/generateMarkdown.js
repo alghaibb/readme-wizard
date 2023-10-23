@@ -79,14 +79,13 @@ function generateMarkdown(answers) {
 
     // Screenshot
     if (answers.screenshot) {
-        markdown += `## Screenshot | Live Video Demonstration\n\n`;
+        markdown += `## Screenshot\n\n`;
         markdown += `<p align="center">\n`;
         markdown += `  <img alt="${answers.imgAlt}" src="${answers.screenshot}" width="400px"><br>\n`;
         markdown += `  ${answers.screenshotSubtitle}\n`;
         markdown += `</p>\n\n`;
-        `<a href="#table-of-contents">Back to Table of Contents</a>\n`
+        markdown += `<a href="#table-of-contents">Back to Table of Contents</a>\n`
     }
-
 
     // Installation
     if (answers.installation) {
@@ -114,8 +113,7 @@ function generateMarkdown(answers) {
 
     // Website
     if (answers.website) {
-        markdown += `## Portfolio\n\nVisit my portfolio:\n${answers.website}\n\n`;
-        markdown += `${answers.websitePlaceholder}\n`;
+        markdown += `## Portfolio\n\nVisit my portfolio:\n[${answers.websitePlaceholder}](${answers.website})\n\n`;
         markdown += `<a href="#table-of-contents">Back to Table of Contents</a>\n`;
     }
 
@@ -127,7 +125,7 @@ function generateMarkdown(answers) {
 
     // License
     if (answers.repoTitle) {
-        markdown += `## License\n\n`;
+        markdown += `## License\n\nThis application is covered under the following licence:\n`;
         markdown += `<p><img src="https://img.shields.io/static/v1?label=License&message=${answers.license}&color=blue" alt="License"></p>\n\n`;
         `<a href="#table-of-contents">Back to Table of Contents</a>\n`
     }
