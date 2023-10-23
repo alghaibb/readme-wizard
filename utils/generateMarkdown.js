@@ -47,7 +47,7 @@ function generateMarkdown(answers) {
 
     // Shields
     if (answers.repoTitle) {
-        markdown += `<p align="right"><img src="https://img.shields.io/github/repo-size/${answers.githubUser}/${answers.repoTitle}?style=plastic" alt="GitHub repo size"><br>\n`;
+        markdown += `<img src="https://img.shields.io/github/repo-size/${answers.githubUser}/${answers.repoTitle}?style=plastic" alt="GitHub repo size"><br>\n`;
         markdown += `<img src="https://img.shields.io/github/languages/top/${answers.githubUser}/${answers.repoTitle}?style=plastic" alt="GitHub top language"></p>\n\n`;
     }
 
@@ -115,6 +115,8 @@ function generateMarkdown(answers) {
     // Website
     if (answers.website) {
         markdown += `## Portfolio\n\nVisit my portfolio:\n${answers.website}\n\n`;
+        markdown += `${answers.websitePlaceholder}\n`;
+        markdown += `<a href="#table-of-contents">Back to Table of Contents</a>\n`;
     }
 
     // Contact
