@@ -24,7 +24,6 @@ console.log(
 const fs = require("fs");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown.js");
-const { error } = require("console");
 
 // User prompts section
 inquirer
@@ -44,7 +43,27 @@ inquirer
                 type: "editor",
                 name: "description",
                 message:
-                    "\nPlease enter a description of your project: \nWhat was your motivation?\nWhy did you build this project?\nWhat problem did it solve?\nWhat did you learn?",
+                    "\nPlease enter a description of your project:",
+            },
+            {
+                type: "editor",
+                name: "motivation",
+                message: "What was the motivation behind creating this project?\n",
+            },
+            {
+                type: "editor",
+                name: "whyBuilt",
+                message: "Why did you build this project?\n",
+            },
+            {
+                type: "editor",
+                name: "problemSolved",
+                message: "What problem does this project solve?\n",
+            },
+            {
+                type: "editor",
+                name: "whatLearned",
+                message: "What did you learn while developing this project?\n",
             },
             {
                 type: "input",
