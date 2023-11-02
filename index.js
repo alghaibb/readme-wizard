@@ -91,10 +91,10 @@ inquirer
                 message: "Please enter installation instructions for your project:\n",
             },
             {
-                type: "input",
+                type: "editor",
                 name: "librariesAndTools",
-                message:
-                    "Please enter libraries and tools used for your project. Write them in a list like this: \n<li>First item</li> <li>Second item</li> <li>Third item</li>:\n",
+                message: "Please enter libraries/technologies/tools used for your project:\n",
+
             },
             {
                 type: "editor",

@@ -87,6 +87,12 @@ function generateMarkdown(answers) {
         markdown += `<a href="#table-of-contents">Back to Table of Contents</a>\n`
     }
 
+    // Libraries/tools/technologies
+    if (answers.librariesAndTools) {
+        markdown += `## Technologies\n\n`;
+        markdown += `<a href="#table-of-contents">Back to Table of Contents</a>\n`
+    }
+
     // Installation
     if (answers.installation) {
         markdown += `## Installation\n\n${answers.installation}\n\n`;
